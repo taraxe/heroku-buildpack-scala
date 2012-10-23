@@ -8,7 +8,7 @@ BIN_DIR=$(cd $(dirname $0); pwd) # absolute path
 . $BIN_DIR/common
 
 # parse args
-BUILD_DIR=$(cd $1; pwd)
+BUILD_DIR=$(cd $1; pwd)/merimee
 CACHE_DIR=$2
 
 curl --silent --location http://heroku-jvm-common.s3.amazonaws.com/jvm-buildpack-common.tar.gz | tar xz
